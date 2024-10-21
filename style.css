@@ -3,120 +3,120 @@
             --primary-color: #ff7dc5;
             --secondary-color: #ffd9ee;
             --button-size: 38px;
-        }
-        * {
-            font-family: arial;
-            box-sizing: border-box;
-        }
-        /*home*/
-        /*header*/
-        .grid-home-header {
-            display: grid;
- 
-            grid-template-columns: 226px auto;
-            gap: 10px;
-            padding: 10px;
-            background-color: var(--secondary-color);
-        }
-            .home-header-profile {
-                grid-column: 1;
-                padding-left: 5px;
-                padding-right: 5px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-            }
-                .name-button {
-                    
-                    background-color: var(--main-color);
-                    
-                    border-radius: 19px;
-                    border: ridge var(--main-color);
-                    
-                    width: 216px;
-                    height: var(--button-size);
-                    
-                    color: var(--secondary-color);
+}
+* {
+    font-family: arial;
+    box-sizing: border-box;
+}
+/*home*/
+/*header*/
+.grid-home-header {
+    display: grid;
 
-                    display: flex;                   /* Enable Flexbox */
-                    justify-content: center;         /* Center text horizontally */
-                    align-items: center;
+    grid-template-columns: 226px auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+.home-header-profile {
+    grid-column: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.name-button {
+    
+    background-color: var(--main-color);
+    
+    border-radius: 19px;
+    border: ridge var(--main-color);
+    
+    width: 216px;
+    height: var(--button-size);
+    
+    color: var(--secondary-color);
 
-                    cursor: pointer;
-                    transition: 0.15s;
-                }
-                .name-button:hover {
-                    background-color: var(--main-color);    /* Invert to main color for background */
-                    opacity: 0.3;
-                    color: white;
-                }
-                .name-button:active {
-                    opacity: 1;
-                }
-                .home-header-profilepic {
-                    border: ridge var(--main-color);                                  
-                    width: 216px;
-                }
-            .grid-header-post {
-                display: grid;
-                grid-template-columns: 1ft;
-                grid-template-rows: auto var(--button-size);
-                gap: 10px;
-                padding: 10px;
-            }
-                .header-post-text{
-                    background-color: white;
-                    color: var(--main-color);
-                    grid-row: 1;
-                    padding: 5px;
-                    border: ridge var(--main-color);
-                }
-                .post_button{
-                    grid-row: 2;
-                    background-color: white;
-                    color: var(--main-color);
-                    margin: 0px;
+    display: flex;                   /* Enable Flexbox */
+    justify-content: center;         /* Center text horizontally */
+    align-items: center;
 
-                    border: ridge var(--main-color);
-                    border-radius: var(--button-size);
-                    
-                    display: flex;                   /* Enable Flexbox */
-                    justify-content: center;         /* Center text horizontally */
-                    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.name-button:hover {
+    background-color: var(--main-color);    /* Invert to main color for background */
+    opacity: 0.3;
+    color: white;
+}
+.name-button:active {
+    opacity: 1;
+}
+.home-header-profilepic {
+    border: ridge var(--main-color);                                  
+    width: 216px;
+}
+.grid-header-post {
+    display: grid;
+    grid-template-columns: 1ft;
+    grid-template-rows: auto var(--button-size);
+    gap: 10px;
+    padding: 10px;
+}
+.header-post-text{
+    background-color: white;
+    color: var(--main-color);
+    grid-row: 1;
+    padding: 5px;
+    border: ridge var(--main-color);
+}
+.post_button{
+    grid-row: 2;
+    background-color: white;
+    color: var(--main-color);
+    margin: 0px;
 
-                    cursor: pointer;
-                    transition: 0.15s;
-                }
-                .post_button:hover {
-                    background-color: var(--main-color);    /* Invert to main color for background */
-                    opacity: 0.3;
-                    color: white;
-                }
-                .post_button:active {
-                    opacity: 1;
-                }
-        /*feed*/
-        .grid-feed-profile{
-            display: grid;
-            grid-template-columns: 50px auto;
-            gap: 10px;
-            margin: 5px;
-            height: 50px;
-            background-color: var(--secondary-color);
-        }
-            .feed-profilepic {                                
-                width: 50px;
-                border-radius: 25px;
-                
-            }
-            .post-name {
-                display: flex;
-                justify-content:left;
-                align-items: left;
-                margin: 0px;
-            }
-            .post-username {
-                
-                margin: 0px;
-                color: gray;
-                font-size: small;
-            }
+    border: ridge var(--main-color);
+    border-radius: var(--button-size);
+    
+    display: flex;                   /* Enable Flexbox */
+    justify-content: center;         /* Center text horizontally */
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.15s;
+}
+.post_button:hover {
+    background-color: var(--main-color);    /* Invert to main color for background */
+    opacity: 0.3;
+    color: white;
+}
+.post_button:active {
+    opacity: 1;
+}
+/*feed*/
+.grid-feed-profile{
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 10px;
+    margin: 5px;
+    height: 50px;
+    background-color: var(--secondary-color);
+}
+.feed-profilepic {                                
+    width: 50px;
+    border-radius: 25px;
+    
+}
+.post-name {
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    margin: 0px;
+}
+.post-username {
+    
+    margin: 0px;
+    color: gray;
+    font-size: small;
+}
